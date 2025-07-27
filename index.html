@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DILDOOO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://i.pinimg.com/736x/e6/9b/fb/e69bfb964afe8bca940eb2bd1d46cb74.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .big-title {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 8px #00000099;
+      margin-bottom: 30px;
+      margin-top: 0;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .container {
+      background: #ffffff95;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 90vw;
+      width: 350px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: none;
+      background: #a13cff;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #7a2dcc;
+    }
+    @media (max-width: 600px) {
+      .big-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+      .container {
+        padding: 1rem;
+        width: 98vw;
+      }
+      input[type="text"] {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="big-title">DILDOS ICT SAMENVATTINGGGG</div>
+  <div class="container">
+    <h2>ENTER PASSWORD</h2>
+    <input type="text" id="codeInput" placeholder="Code..." autocomplete="off" />
+    <br>
+    <button onclick="checkCode()">Done</button>
+    <p id="message" style="color:red; margin-top:1em;"></p>
+  </div>
+  <script>
+    function checkCode() {
+      const code = document.getElementById('codeInput').value.trim().toLowerCase();
+      if (code === "manja") {
+        window.location.href = "home.html"; // Vervang door jouw gewenste URL
+      } else {
+        document.getElementById('message').textContent = "Wrong code, Try again.";
+      }
+    }
+    // Enter key support
+    document.getElementById('codeInput').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') checkCode();
+    });
+  </script>
+</body>
+</html>

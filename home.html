@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://i.pinimg.com/736x/e7/02/5b/e7025b87764e0525cabdd68159e656ad.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      color: #000000;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 8px #00000055;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .container-row {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 900px;
+    }
+    .clickable-container {
+      background: #ffffffbb;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+      padding: 2.5rem 2rem;
+      min-width: 220px;
+      min-height: 120px;
+      max-width: 260px;
+      flex: 1 1 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #a13cff;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      border: 2px solid #f799fa;
+    }
+    .clickable-container:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 6px 24px rgba(161,60,255,0.18);
+      border-color: #a13cff;
+    }
+    @media (max-width: 900px) {
+      .container-row {
+        gap: 1rem;
+      }
+      .clickable-container {
+        min-width: 160px;
+        font-size: 1.1rem;
+        padding: 1.5rem 1rem;
+      }
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .container-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .clickable-container {
+        width: 90vw;
+        max-width: 95vw;
+        min-width: unset;
+        font-size: 1rem;
+        padding: 1.2rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1 style="font-size: 2rem;">TUTOR DILDAN</h1>
+<div class="container-row">
+    <div class="clickable-container" onclick="window.location.href='computerleer.html'" style="font-size: 2rem;">
+        BASIS COMPUTERLEER
+    </div>
+    <div class="clickable-container" onclick="window.location.href='internettermen.html'" style="font-size: 2rem;">
+        INTERNETTERMEN
+    </div>
+    <div class="clickable-container" onclick="window.location.href='binbows.html'" style="font-size: 2rem;">
+        WINDOWSS
+    </div>
+  </div>
